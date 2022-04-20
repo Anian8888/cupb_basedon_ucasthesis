@@ -1,0 +1,62 @@
+%---------------------------------------------------------------------------%
+%->> Frontmatter
+%---------------------------------------------------------------------------%
+%-
+%-> 生成封面
+%-
+\maketitle% 生成中文封面
+%\MAKETITLE% 生成英文封面
+%-
+%-> 作者声明
+%-
+%\makedeclaration% 生成声明页
+%-
+%-> 中文摘要
+%-
+%\intobmk\chapter*{摘\quad 要}% 显示在书签但不显示在目录
+\chapter{摘\quad 要}%显示在目录
+\setcounter{page}{1}% 开始页码
+\pagenumbering{Roman}% 页码符号
+
+本文是中国科学院大学学位论文模板ucasthesis的使用说明文档。主要内容为介绍\LaTeX{}文档类ucasthesis的用法，以及如何使用\LaTeX{}快速高效地撰写学位论文。
+
+\keywords{\textbf{中国科学院大学，学位论文，\LaTeX{}模板}}% 中文关键词
+%-
+%-> 英文摘要
+%-
+%\intobmk\chapter*{Abstract}% 显示在书签但不显示在目录
+%\chapter{Abstract}%显示在目录
+{
+    \ctexset {
+        chapter = {
+            format = \linespread{1.25}\zihao{-3}\bfseries\centering,
+            number = \arabic{chapter},
+            aftername = \quad,
+            beforeskip = {0pt},
+            afterskip = {0pt},
+            pagestyle = plain,
+        }
+    }
+    \chapter*{The Format Criterion of Doctoral Dissertation}%在个括号里输入英文标题
+    \chaptermark{ABSTRACT}
+    {
+        \linespread{1.25}
+        {\ }\par
+    }
+    \ctexset {
+        chapter = {
+            break={\par\relax},
+            format = \linespread{1.5}\zihao{-3}\bfseries\centering,
+            number = \arabic{chapter},
+            aftername = \quad,
+            beforeskip = {0pt},
+            afterskip = {11pt},
+            pagestyle = plain,
+        }
+    }
+    \chapter{ABSTRACT}
+}% 下边写英文摘要
+This paper is a help documentation for the \LaTeX{} class ucasthesis, which is  a thesis template for the University of Chinese Academy of Sciences. The main content is about how to use the ucasthesis, as well as how to write thesis efficiently by using \LaTeX{}.
+
+\KEYWORDS{\textbf{University of Chinese Academy of Sciences (UCAS), Thesis, \LaTeX{} Template}}% 英文关键词
+%---------------------------------------------------------------------------%
