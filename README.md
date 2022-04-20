@@ -25,6 +25,9 @@
 ## 重要建议
 
 * 关于使用问题，请先读国科大的模板 **模板使用说明.pdf**。
+* 完整编译请使用xe->bib->xe->xe
+* 本人使用texlive 2022 ,搭配VScode,github,和SumatraPDF使用，编译无误上传
+* 如果使用pdf->bib->pdf->pdf会报错
 
 ## 更新记录
 
